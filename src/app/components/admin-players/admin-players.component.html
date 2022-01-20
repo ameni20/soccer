@@ -1,0 +1,19 @@
+<table class="table">
+    <tr>
+        <th>ID</th>
+        <th>name</th>
+        <th>poste</th>
+        
+        
+    </tr>
+    <tr *ngFor='let p of players'>
+        <td>{{p.id}}</td>
+        <td>{{p.nameP}}</td>
+        <td>{{p.posteP}}</td>
+        
+        
+        <td>
+            <button class="btn btn-danger" (click)='delete(p.id)'>Delete</button>
+        </td>
+    </tr>
+</table>
